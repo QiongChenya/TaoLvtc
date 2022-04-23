@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaoLvtcModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Phone_Number" />
+    </Key>
+    <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nchar" MaxLength="16" />
+    <Property Name="Sex" Type="char" MaxLength="2" />
+    <Property Name="PassWord" Type="nchar" MaxLength="16" />
+    <Property Name="Image" Type="image" />
+    <Property Name="Fans" Type="nvarchar(max)" />
+    <Property Name="Account_Status" Type="tinyint" />
+  </EntityType>
+  <EntityContainer Name="TaoLvtcModelStoreContainer">
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

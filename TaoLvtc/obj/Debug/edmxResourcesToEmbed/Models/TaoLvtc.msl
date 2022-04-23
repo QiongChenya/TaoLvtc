@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaoLvtcModelStoreContainer" CdmEntityContainer="TaoLvtcEntities">
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="TaoLvtcModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Fans" ColumnName="Fans" />
+          <ScalarProperty Name="Account_Status" ColumnName="Account_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
